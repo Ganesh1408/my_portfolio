@@ -7,19 +7,23 @@
         <style type="text/css">
             a{
                 text-decoration:none;
-                color:black;
+                
             }
             </style>
             </head>
         <body>
+            
             <div class="header-container">
-                <h1 class="heading"><a href="#profile">Ganesh somari</a></h1>
+                <h1 ><a class="heading" href="#profile">Ganesh somari</a></h1>
                 <ul class ="list-heading">
-                    <li class="list-item" ><a href="#about" >About</a></li>
-                    <li class="list-item"><a href="#projects" >Projects</a></li>
-                    <li class="list-item"><a href="#contact" >Contact</a></li>
+                    <li  ><a class="list-item" href="#about" >About</a></li>
+                    <li ><a class="list-item"href="#projects" >Projects</a></li>
+                    <li ><a class="list-item" href="#contact" >Contact</a></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/702/702471.png" id= "icon" alt="moon" class="icon"/></li>
                 </ul>
+                
             </div>
+        
             <div class="profile" id="profile">
                 <img src="https://res.cloudinary.com/dekbzlryr/image/upload/v1724581942/ganu_ebnhvf.jpg" alt="profile-image" class="profile-image"/>
                 <div class="profile-details">
@@ -27,16 +31,14 @@
                 <h1 class="profile-details-info name">Ganesh Somari</h1>
                 <h2 class="profile-details-info job-type">Full Stack Developer</h2>
                 <div>
-                <button class="button"><a href="https://online.publuu.com/633884/1413692/page/2" target="_blank">Donwload CV</a></button>
-                <button class="  button button2"><a href="#contact" ><span style="color:white">Contact me</span></a></button>
+                <button class="button" ><a class="a"  href="https://online.publuu.com/633884/1413692/page/2"  target="_blank">Donwload CV</a></button>
+                <button class="  button button2" ><a  class="a" href="#contact" >Contact me</a></button>
                 </div>
-                <div>
+                <div class="links">
                 <a href="https://www.linkedin.com/in/ganeshs88?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjFYbJOywTVqk8vcTqoLMEQ%3D%3D" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="linkedin" class="icon-image"/></a>
-                <a href="https://github.com/Ganesh1408" target="_blank"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"  alt="github-image" class="icon-image"/></a>
+                <a href="https://github.com/Ganesh1408" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/733/733553.png"  alt="github-image" class="git"/></a>
+                </div>
             </div>
-            </div>
-
-
             </div>
             <div class="about-page" id="about">
                 <h1 class="about-heading">About</h1>
@@ -50,24 +52,24 @@
                     <img src="https://res.cloudinary.com/dekbzlryr/image/upload/v1724678536/nxt2_itkivs.jpg" alt="project1-image" class="project-image"><br/>
                     <h1 class="project-heading">Project One</h1>
                     <div>
-                    <button class="project-button"><a href="https://github.com/Ganesh1408/nxt-trendzfinal.git" target="_blank  ">Github</a></button>
-                    <button class="project-button"><a href="https://somariganeshnxt.ccbp.tech/login" target="_blank">Live Demo</a></button>
+                    <button class="project-button"><a class="a2" href="https://github.com/Ganesh1408/nxt-trendzfinal.git" target="_blank  ">Github</a></button>
+                    <button class="project-button"><a class="a2"  href="https://somariganeshnxt.ccbp.tech/login" target="_blank">Live Demo</a></button>
                     </div>
                 </div>
                 <div class="project-card">
                     <img src="https://res.cloudinary.com/dekbzlryr/image/upload/v1724681774/nxtwatch_iqiiz3.jpg" alt="project1-image" class="project-image"><br/>
                     <h1 class="project-heading">Project Two</h1>
                     <div>
-                    <button class="project-button"><a href="https://github.com/Ganesh1408/nxt-watch.git" target="_blank  ">Github</a></button>
-                    <button class="project-button"><a href="https://ganeshsnxtwatch.ccbp.tech/login" target="_blank">Live Demo</a></button>
-                </div>
+                    <button class="project-button"><a class="a2" href="https://github.com/Ganesh1408/nxt-watch.git" target="_blank  ">Github</a></button>
+                    <button class="project-button"><a class="a2"  href="https://ganeshsnxtwatch.ccbp.tech/login" target="_blank">Live Demo</a></button>
+                    </div>
                 </div>
                 <div class="project-card">
                     <img src="https://res.cloudinary.com/dekbzlryr/image/upload/v1724771634/todo1_qw1wwk.jpg" alt="project1-image" class="project-image"><br/>
                     <h1 class="project-heading">Project Three</h1>
                     <div>
-                    <button class="project-button"><a href="https://github.com/Ganesh1408/todo.git" target="_blank  ">Github</a></button>
-                    <button class="project-button"><a href="https://todoganesh.ccbp.tech" target="_blank">Live Demo</a></button>
+                    <button class="project-button"><a class="a2" href="https://github.com/Ganesh1408/todo.git" target="_blank  ">Github</a></button>
+                    <button class="project-button"><a class="a2" href="https://todoganesh.ccbp.tech" target="_blank">Live Demo</a></button>
                 </div>
                 </div>
             </div>
@@ -88,7 +90,18 @@
 
             </div>
 
-            
+            <script>
+               var iconEl= document.getElementById("icon")
+               iconEl.onclick=function(){
+                    document.body.classList.toggle("dark-theme")
+                    if(document.body.classList.contains("dark-theme")){
+                        icon.src="https://static.vecteezy.com/system/resources/previews/000/627/440/original/sun-icon-symbol-sign-vector.jpg"
+                    }else{
+                        icon.src="https://cdn-icons-png.flaticon.com/128/702/702471.png"
+                    }
+                }
+                
+            </script>
         </body>
     
 </html>

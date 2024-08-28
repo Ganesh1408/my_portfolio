@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+html{
+    overflow-x:hidden;
+}
+
+
 
 .header-container{
-    background-color: white;
+    background-color: var(--primary-color);
     height:15vh;
     width:100vw;
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
     align-items:center;
-    color:black;
     border-top-left-radius: 6px;
         border-top-right-radius: 6px;
         position:fixed;
@@ -21,6 +25,7 @@
     font-family:"Roboto";
     font-size:24px;
     font-weight:lighter;
+    color:var(--secondary-color);
 
 }
 @media screen and (min-width:577px){
@@ -35,15 +40,19 @@
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-}
+   }
+
 @media screen and (min-width:577px){
     .list-heading{
-        font-size:20px;       
+        font-size:20px;
+        
+       
     }
 }
 
 .list-item{
     margin-right:10px;
+    color:var(--secondary-color)
 }
 
 @media screen and (min-width:577px){
@@ -54,8 +63,9 @@
     }
 }
 
+
 .profile{
-    background-color: white;
+    background-color:var(--primary-color);
     padding-top:30px;
     height:100vh;
     width:100vw;
@@ -63,7 +73,8 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
-
+    
+    
 }
 
 @media screen and  (min-width:577px){
@@ -108,18 +119,21 @@
 }
 .profile-details-info{
     font-family:"Roboto";
+    
 
 }
 .name{
     font-size:28px;
+    color:var(--secondary-color);
 }
 @media screen and (min-width:577px){
     .name{
         font-size:36px;
+        
     }
 }
 .wish{
-    color:grey;
+    color:var(--secondary-color);
         font-size:10px;
         font-weight:lighter;
         text-align:center;
@@ -131,72 +145,114 @@
 }
 
 .job-type{
-    color:grey;
+    color:var(--secondary-color);
     font-size:16px;
     text-align:center;
 }
 
+.icon{
+    width:25px;
+    cursor:pointer;
+    
+}
+
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+}
+
+.dark-theme{
+    --primary-color:#212121;
+    --secondary-color:#edf2fc;
+}
 @media screen and (min-width:577px){
     .job-type{
         font-size:20px;
     }
 }
+
+.a{
+    text-decoration:none;
+    color:var(--secondary-color)
+}
 .button{
     font-family:"Roboto";
         font-size:10px;
-        background:transparent;
+        background-color:var(--primary-color);
+        border:1px solid var(--secondary-color);
         width:80px;
         height:20px;
         border-radius: 18px;
         margin: 0;
         margin-right:10px;
+        
 }
 
 @media screen and (min-width:577px){
     .button{
         font-size:12px;
-        background:transparent;
         width:100px;
         height:36px;    
+        
     }
 }
 
 .button2{
-    background-color: black;
+    background-color:var(--primary-color);
+    
+}
+
+.links{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-image{
     height:35px;
     width:35px;
+    
 }
 
-@media screen and (min-width:700px){
+.git{
+    height:30px;
+    width:30px;
+    
+    
+}
+@media screen and (min-width:577px){
+    .git{
+        height:40px;
+        width:40px;
+        
+    }
+}
+
+@media screen and (min-width:577px){
     .icon-image{
         height:50px;
         width:50px;
     }
 }
-
 .about-page{
-    background-color:white;
-        height:100vh;
-        width:100vw;
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items:center;
-        font-family:"Roboto";
-        margin-bottom:20px;   
+    background-color:var(--primary-color);
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    font-family:"Roboto"        
+        
 }
-@media screen and (min-width:577px){
-    .about-page{
-        margin-bottom:40px;   
-    }
-}
+
 .about-heading{
     font-size:20px;
+    color:var(--secondary-color);
 }
-@media screen and  (min-width:700px){
+
+@media screen and  (min-width:577px){
     .about-heading{
         font-size:30px;
     }
@@ -207,8 +263,9 @@
     font-weight:500;
     width:80%;
     line-height:20px;
+    color:var(--secondary-color);
 }
-@media screen and  (min-width:700px){
+@media screen and  (min-width:577px){
     .about-description{
         font-size:18px;
         font-weight:500;
@@ -217,22 +274,19 @@
     }
 }
 
-.projects{
-    background-color:white;
-    height:100vh;
+.Projects{
+    background-color:var(--primary-color);
+    height:100%;
     width:100vw;
-    margin-top:20px;
+    padding-top:20px;
+    
 }
-@media screen and (min-width:700px){
-    .Projects{
-        margin-top:30px;
-    }
-}
+
 
 .ph1{
     font-family:"Roboto";
         font-size:10px;
-        color:grey;
+        color:var(--secondary-color);
         text-align:center;
         line-height: 3px;
 }
@@ -246,7 +300,7 @@
 .ph2{
     font-family:"Roboto";
     font-size:16px;
-    color:black;
+    color:var(--secondary-color);
     font-weight:600;
     text-align:center;
 }
@@ -256,8 +310,8 @@
     }
 }
 .project-card{
-    border:1px solid black;
-        background-color:whitesmoke;
+    border:1px solid var(--secondary-color);
+        background-color:var(--primary-color);
         height:380px;
         width:260px;
         border-radius:14px;
@@ -269,6 +323,7 @@
         flex-direction: column;
         justify-content: center;
         align-items:center;
+        
 }
 
 @media screen and  (min-width:577px){
@@ -285,6 +340,8 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    
+    
 }
 @media screen and (min-width:1260px){
     .projects-list{
@@ -312,10 +369,13 @@
     border-radius:10px;
     font-family:"Roboto";
     font-size:12px;
-    color:black;
     font-weight:600;
-    background: transparent;
+    background-color: var(--secondary-color);
     cursor:pointer;
+}
+.a2{
+    text-decoration: none;
+    color:var(--primary-color)
 }
 @media screen and  (min-width:577px){
     .project-button{
@@ -329,7 +389,7 @@
 .project-heading{
     font-family:"Roboto";
     font-size:20px;
-    color:black;
+    color:var(--secondary-color);
     font-weight: bold;
     text-align:center;
 }
@@ -341,26 +401,34 @@
 .contact{
     height:100vh;
     width:100vw;
-    background-color: white;
+    background-color:var(--primary-color);
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    
 }
 .form-card{
-    border:1px solid black;
+    border:1px solid var(--secondary-color);
     height:280px;
     width:260px;
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    background-color:whitesmoke;
-    border-radius:8px;
+    background-color:var(--primary-color);
+    border-radius:12px;
+    position:absolute;
+    
+    
+    
+    
+
 }
 @media screen and  (min-width:577px){
     .form-card{
-        height:340px;
+        height:380px;
         width:360px;
     }
 }
@@ -383,7 +451,8 @@
         color:grey;
         text-align:start;
         border:0px;
-        border-radius:8px;
+        border-radius:12px;
+        border:1px solid var(--secondary-color);
 }
 @media screen and (min-width:577px){
     .input{
@@ -396,7 +465,7 @@
     font-family:"Roboto";
     font-size:12px;
     background-color:red;
-    color:white;
+    color:var(--secondary-color);
     margin:8px;
     height:30px;
     width:60px;
@@ -404,7 +473,7 @@
     border:none;
     cursor: pointer;
 }
-@media screena and (min-width:577px){
+@media screen and (min-width:577px){
     .submit-button{
         font-size:14px;
         margin:10px;
@@ -412,9 +481,4 @@
         width:60px;
     }
 }
-
-
-
-
-
 
